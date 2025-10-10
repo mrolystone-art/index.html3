@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center font-sans py-10">
+
+    <div class="bg-white p-8 sm:p-10 rounded-xl shadow-2xl w-full max-w-xl mx-4 my-8 border border-gray-300">
+
+        <h1 class="text-3xl font-extrabold text-gray-800 text-center mb-8">
+            Contact Information Form
+        </h1>
+        <p class="text-center text-gray-500 mb-8">Please fill out this form to provide your contact details and interests.</p>
+        <hr class="mb-8 border-gray-300">
+
+        <form action="#" method="POST" class="space-y-6">
+
+            <!-- Personal Information -->
+            <fieldset class="border border-gray-300 p-6 rounded-lg shadow-sm bg-gray-50/50 space-y-5">
+                <legend class="text-lg font-semibold text-blue-600 px-2 ml-4">Personal Information</legend>
+                <div class="space-y-5">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-1">
+                            <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required placeholder="First Name"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-400 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                        <div class="flex-1">
+                            <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required placeholder="Last Name"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-400 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-1">
+                            <label for="birth-date" class="block text-sm font-medium text-gray-700 mb-1">Date of Birth</label>
+                            <input type="date" id="birth-date" name="birth-date"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                        <div class="flex-1">
+                            <label for="age" class="block text-sm font-medium text-gray-700 mb-1">Age</label>
+                            <input type="number" id="age" name="age"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Gender</label>
+                        <div class="flex items-center gap-6">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="gender" value="male" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                                <span class="ml-2 text-gray-700">Male</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="gender" value="female" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                                <span class="ml-2 text-gray-700">Female</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="profile-photo" class="block text-sm font-medium text-gray-700 mb-1">Profile Photo</label>
+                        <input type="file" id="profile-photo" name="profile-photo"
+                            class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Contact & Address Information -->
+            <fieldset class="border border-gray-300 p-6 rounded-lg shadow-sm bg-gray-50/50 space-y-5">
+                <legend class="text-lg font-semibold text-blue-600 px-2 ml-4">Contact & Address Information</legend>
+                <div class="space-y-5">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-1">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-400 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                        <div class="flex-1">
+                            <label for="phone-number" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" id="phone-number" name="phone-number"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-400 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="personal-website" class="block text-sm font-medium text-gray-700 mb-1">Personal Website</label>
+                        <input type="url" id="personal-website" name="personal-website"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-400 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="street-address" class="block text-sm font-medium text-gray-700 mb-1">Street Address</label>
+                        <input type="text" id="street-address" name="street-address"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-400 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-1">
+                            <label for="city" class="block text-sm font-medium text-gray-700 mb-1">City</label>
+                            <input type="text" id="city" name="city"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-400 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                        <div class="flex-1">
+                            <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Country</label>
+                            <select id="country" name="country"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                                <option value="">Select Country</option>
+                                <option value="usa">USA</option>
+                                <option value="dubai">Dubai</option>
+                                <option value="kenya">Kenya</option>
+                                <option value="australia">Australia</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-1">
+                            <label for="zip-code" class="block text-sm font-medium text-gray-700 mb-1">Zip/Postal Code</label>
+                            <input type="text" id="zip-code" name="zip-code"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-400 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                        <div class="flex-1">
+                            <label for="preferred-contact-time" class="block text-sm font-medium text-gray-700 mb-1">Preferred Contact Time</label>
+                            <input type="time" id="preferred-contact-time" name="preferred-contact-time"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Preferences & Interests -->
+            <fieldset class="border border-gray-300 p-6 rounded-lg shadow-sm bg-gray-50/50 space-y-5">
+                <legend class="text-lg font-semibold text-blue-600 px-2 ml-4">Preferences & Interests</legend>
+                <div class="space-y-5">
+                    <div>
+                        <label for="favcolor" class="block text-sm font-medium text-gray-700 mb-1">Favorite Color</label>
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000"
+                            class="w-16 h-8 border-0 rounded-md cursor-pointer">
+                    </div>
+                    <div>
+                        <label for="color-range" class="block text-sm font-medium text-gray-700 mb-1">Color Range</label>
+                        <input type="range" id="color-range" name="color-range" min="0" max="100" value="50"
+                            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                    </div>
+                    <div>
+                        <label for="birthday-month" class="block text-sm font-medium text-gray-700 mb-1">Birthday Month</label>
+                        <input type="month" id="birthday-month" name="birthday-month"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="available-week" class="block text-sm font-medium text-gray-700 mb-1">Available Week</label>
+                        <input type="week" id="available-week" name="available-week"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="search-keyword" class="block text-sm font-medium text-gray-700 mb-1">Search Keyword</label>
+                        <input type="search" id="search-keyword" name="search-keyword"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Interests (Select all that apply)</label>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="interests" value="technology" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                                <span class="ml-2 text-gray-700">Technology</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="interests" value="sports" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                                <span class="ml-2 text-gray-700">Sports</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="interests" value="music" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                                <span class="ml-2 text-gray-700">Music</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="interests" value="cooking" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                                <span class="ml-2 text-gray-700">Cooking</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="interests" value="travel" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                                <span class="ml-2 text-gray-700">Travel</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="interests" value="reading" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                                <span class="ml-2 text-gray-700">Reading</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="education-level" class="block text-sm font-medium text-gray-700 mb-1">Education Level</label>
+                        <select id="education-level" name="education-level"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                            <option value="high-school">High School</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="phd">PhD</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-1">
+                            <label for="create-password" class="block text-sm font-medium text-gray-700 mb-1">Create Password</label>
+                            <input type="password" id="create-password" name="create-password"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                        <div class="flex-1">
+                            <label for="confirm-password" class="block text-sm font-medium text-gray-700 mb-1">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Feedback & Additional Information -->
+            <fieldset class="border border-gray-300 p-6 rounded-lg shadow-sm bg-gray-50/50 space-y-5">
+                <legend class="text-lg font-semibold text-blue-600 px-2 ml-4">Feedback & Additional Information</legend>
+                <div class="space-y-5">
+                    <div>
+                        <label for="about-yourself" class="block text-sm font-medium text-gray-700 mb-1">Tell Us About Yourself</label>
+                        <textarea id="about-yourself" name="about-yourself" rows="4"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-400 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none"
+                            placeholder="Write a brief description of yourself..."></textarea>
+                    </div>
+                    <div>
+                        <label for="suggestion-for-improvement" class="block text-sm font-medium text-gray-700 mb-1">Suggestions for Improvement</label>
+                        <textarea id="suggestion-for-improvement" name="suggestion-for-improvement" rows="4"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 placeholder-gray-400 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none"
+                            placeholder="Any feedback or suggestions..."></textarea>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-1">
+                            <label for="registration-date-time" class="block text-sm font-medium text-gray-700 mb-1">Registration Date & Time</label>
+                            <input type="datetime-local" id="registration-date-time" name="registration-date-time"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                        </div>
+                        <div class="flex-1">
+                            <label for="how-did-you-hear" class="block text-sm font-medium text-gray-700 mb-1">How did you hear about us?</label>
+                            <select id="how-did-you-hear" name="how-did-you-hear"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-800 transition duration-300 focus:border-blue-700 hover:border-gray-400 focus:outline-none">
+                                <option value="">--Select an option--</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="friend-family">Friend/Family</option>
+                                <option value="search-engine">Search Engine</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" id="subscribe" name="subscribe" value="subscribe" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                            <span class="ml-2 text-gray-700">Subscribe to our newsletter</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" id="agree-terms" name="agree-terms" required class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                            <span class="ml-2 text-gray-700">I agree to the terms and conditions</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" id="privacy-policy" name="privacy-policy" required class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-600">
+                            <span class="ml-2 text-gray-700">I agree to the privacy policy</span>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="flex gap-4">
+                <button type="submit"
+                    class="w-full py-3 px-6 text-base font-semibold text-white bg-blue-600 rounded-lg cursor-pointer transition duration-300 border border-transparent hover:bg-blue-800 shadow-md focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:outline-none">
+                    Register
+                </button>
+                <button type="reset"
+                    class="w-full py-3 px-6 text-base font-semibold text-gray-700 bg-gray-200 rounded-lg cursor-pointer transition duration-300 border border-transparent hover:bg-gray-300 focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:outline-none">
+                    Clear Form
+                </button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
